@@ -9,8 +9,15 @@
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
-    color: black; /* Couleur du texte */
-    text-decoration:underline
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
 }
 
 /* Styles pour les liens dans la navbar */
