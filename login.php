@@ -20,57 +20,6 @@ if ($loggedIn) {
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/login.css" />
-    <style>
-      body {
-        background-color: #f2f2f2;
-      }
-
-      .title {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-      }
-
-      .card {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .card-title {
-        font-weight: bold;
-        color: #333;
-      }
-
-      .form-control {
-        border: 1px solid #ccc;
-      }
-
-      .btn-primary {
-        width: 100%;
-        border-radius: 30px;
-        font-weight: bold;
-        background-color: #007bff;
-        border-color: #007bff;
-      }
-
-      .btn-primary:hover {
-        background-color: #0056b3;
-        border-color: #0056b3;
-      }
-
-      .btn-outline-secondary {
-        width: 100%;
-        border-radius: 30px;
-        font-weight: bold;
-        color: #333;
-        border-color: #ccc;
-      }
-
-      .btn-outline-secondary:hover {
-        color: #000;
-        background-color: #f2f2f2;
-        border-color: #ccc;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

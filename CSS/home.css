@@ -1,7 +1,66 @@
 body {
+  font-family: Arial, sans-serif;
   background-color: rgb(240, 240, 240);
 }
+
 .sell_car_btn,
 .my_cars_btn {
   float: right;
+}
+
+header {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2196f3;
+}
+
+h2 {
+  text-align: center;
+  color: #000000;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+label,
+select,
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+select {
+  appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  flex: auto;
+}
+
+button:hover {
+  background-color: #0d8bf2;
 }

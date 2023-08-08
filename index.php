@@ -36,61 +36,7 @@ if (!$loggedIn) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Car Selling Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-    header {
-      background-color: #2196F3;
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      color: #2196F3;
-    
-    }
-    h2 { 
-        text-align: center;
-        color:#000000;
-    }  
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
-    }
-    label, select, input, button {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
-    select {
-      appearance: none;
-      background-color: white;
-      cursor: pointer;
-    }
-    button {
-      cursor: pointer;
-      background-color: #2196F3;
-      color: white;
-      border: none;
-      flex:auto
-      
-    }
-    button:hover {
-      background-color: #0d8bf2;
-    }
-    
-  </style>
+
 </head>
 <body>
   <?php
@@ -136,51 +82,7 @@ if (!$loggedIn) {
     </select>
 
     <!-- Include JavaScript to handle the dynamic behavior -->
-    <script>
-    // Get references to the select elements
-    const brandSelect = document.getElementById('marque');
-    const modelSelect = document.getElementById('model');
-
-    // Function to fetch models based on the selected brand
-    function fetchModelsByBrand() {
-        // Get the selected brand value
-        const selectedBrand = brandSelect.value;
-
-        // Clear the existing options in the model select
-        modelSelect.innerHTML = '<option value="">Select Model</option>';
-
-        // If no brand is selected, do not make the AJAX request
-        if (!selectedBrand) return;
-
-        // Make an AJAX request to fetch the models for the selected brand
-        const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'PHP/model.php?brand=' + encodeURIComponent(selectedBrand), true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Parse the JSON response
-                const models = JSON.parse(xhr.responseText);
-
-                // Generate the options for the model select
-                models.forEach(function (model) {
-                    const option = document.createElement('option');
-                    option.value = model.model_id;
-                    option.textContent = model.model_name;
-                    modelSelect.appendChild(option);
-                });
-            }
-        };
-
-        // Send the AJAX request
-        xhr.send();
-    }
-
-    // Add an event listener to the brand select to trigger fetching models
-    brandSelect.addEventListener('change', fetchModelsByBrand);
-</script>
-
-
-
+    <script src="JS\index.js"></script>
 
       <label for="car_year">Car Year:</label>
       <input type="number" name="car_year" id="car_year" min="1900" max="2023">
@@ -211,8 +113,6 @@ if (!$loggedIn) {
       <button type="submit">Submit</button>
     </form>
   </main>
-  <script>
-  
   
 </body>
 </html>
