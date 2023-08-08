@@ -17,7 +17,7 @@ function getModelsByBrandId($brand_id)
 // Handle the HTTP method
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['brand'])) {
-        $brand_id = (int)$_GET['brand'];
+        $brand_id = (int) $_GET['brand'];
         $models = getModelsByBrandId($brand_id);
         echo json_encode($models);
     } else {
