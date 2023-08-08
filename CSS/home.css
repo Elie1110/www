@@ -1,0 +1,7 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+.sell_car_btn,
+.my_cars_btn {
+  float: right;
+}
