@@ -1,65 +1,9 @@
-<style>
-/* Styles pour la navbar */
-.navbar {
-    background-color: #dc3545; /* Couleur de fond de la navbar */
-    padding: 10px 20px; /* Espacement interne */
-}
-
-/* Styles pour le logo (navbar-brand) */
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0;
-}
-
-/* Styles pour les liens dans la navbar */
-.navbar-nav .nav-link {
-    font-size: 18px;
-    color: black; /* Couleur du texte */
-    text-decoration: none;
-    padding: 8px 12px; /* Espacement interne des liens */
-}
-
-.navbar-nav .nav-link:hover {
-    background-color:deepskyblue; /* Couleur de fond au survol */
-    border-radius: 5px; /* Coins arrondis au survol */
-}
-
-/* Styles pour le bouton "Logout" */
-.navbar-nav .btn-outline-danger {
-    font-size: 16px;
-    color: #dc3545; /* Couleur du texte */
-    border-color: #dc3545; /* Couleur de la bordure */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 8px 16px; /* Espacement interne */
-    margin-left: 10px; /* Marge entre le lien et le bouton */
-}
-
-.navbar-nav .btn-outline-danger:hover {
-    background-color: #dc3545; /* Couleur de fond au survol */
-    color: #dc3545; /* Couleur du texte au survol */
-}
-</style>
+<link rel="stylesheet" href="css/navbar.css" />
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="/index.php">Car shopping</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -76,7 +20,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/cart.php">My cart</a>
                 </li>
-            </ul> 
+            </ul>
             <?php
             if (isset($_SESSION['email'])) {
                 echo '<ul class="navbar-nav ms-auto mb-2 mb-lg-0">';
@@ -105,6 +49,6 @@
         </div>
     </div>
 </nav>
-        </div>
-    </div>
+</div>
+</div>
 </nav>
